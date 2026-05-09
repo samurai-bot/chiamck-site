@@ -752,6 +752,70 @@ img { max-width: 100%; display: block; }
 }
 
 /* =========================================================
+   404 PAGE
+   ========================================================= */
+
+.page--404 { background: var(--paper); }
+
+.notfound {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 6rem) var(--gutter) clamp(4rem, 10vw, 8rem);
+  position: relative;
+}
+.notfound__numerals {
+  font-family: var(--serif);
+  font-size: clamp(8rem, 28vw, 22rem);
+  line-height: .8;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--accent);
+  letter-spacing: -.05em;
+  margin: 0 0 1rem;
+  font-variation-settings: "opsz" 144, "SOFT" 90;
+  pointer-events: none;
+  user-select: none;
+}
+.notfound__title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw + 1rem, 3.6rem);
+  line-height: 1.05;
+  font-weight: 360;
+  letter-spacing: -.02em;
+  margin: 0 0 1.4rem;
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+  max-width: 18ch;
+}
+.notfound__title em {
+  font-style: italic;
+  color: var(--accent);
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+}
+.notfound__lede {
+  max-width: 50ch;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin: 0 0 2rem;
+}
+.notfound__lede a {
+  border-bottom: 1px solid var(--accent);
+  color: var(--accent);
+}
+.notfound__links {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; gap: .55rem;
+  font-family: var(--mono);
+  font-size: .9rem;
+  letter-spacing: .04em;
+}
+.notfound__links a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule-soft);
+}
+.notfound__links a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* =========================================================
    GATE PAGE (locked résumé)
    ========================================================= */
 
