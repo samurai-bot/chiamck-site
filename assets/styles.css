@@ -1180,6 +1180,10 @@ img { max-width: 100%; display: block; }
   .resume__lede { font-size: 10pt; }
   .role__title { font-size: 11.5pt; }
   .role__when, .role__org { font-size: 8.5pt; }
+  /* Date range was --ink-faint; bump to full ink for white PDF background */
+  .role__when { color: var(--ink) !important; font-weight: 500 !important; }
+  .resume__hint { color: var(--ink-mute) !important; }
+  .resume__contact li::after { color: var(--ink-mute) !important; }
   .role__points, .resume__skills p, .resume__skills dl, .skill__list, .resume__edu { font-size: 9pt; }
   .resume__skills h3 { font-size: 7.5pt; padding-bottom: 2pt; }
   .resume__skills { gap: 8pt 14pt; }
